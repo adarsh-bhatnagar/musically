@@ -17,7 +17,7 @@ const app = express();
 const port = 8000;
 
 app.use(cors({
-    origin: 'http://localhost:3000', // Allow requests from this origin
+    origin: 'https://musically-frontend.onrender.com/', // Allow requests from this origin
     methods: ['GET', 'POST'], // Allow these HTTP methods
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
