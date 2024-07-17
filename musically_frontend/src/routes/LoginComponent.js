@@ -19,7 +19,7 @@ const LoginComponent = () => {
         };
 
         try {
-            const response = await makeUnauthenticatedPOSTRequests("https://musically-0i47.onrender.com//auth/login", data);
+            const response = await makeUnauthenticatedPOSTRequests("https://musically-0i47.onrender.com/auth/login", data);
 
             console.log(response);
             const token = response.token;
