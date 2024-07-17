@@ -27,7 +27,7 @@ const UploadSongComponent = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await makeAuthenticatedGETRequests("http://localhost:8000/song/get/songs", songData);
+                const response = await makeAuthenticatedGETRequests("https://musically-0i47.onrender.com/song/get/songs", songData);
                 console.log(response.data);
                 setSongData(response.data);
 
