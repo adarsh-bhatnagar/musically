@@ -10,7 +10,7 @@ const SearchComponent = () => {
     const [searchText, setSearchText] = useState("");
 
     const searchSong = async () => {
-            const response = await makeAuthenticatedGETRequests("https://musically-0i47.onrender.com/song/get/songname/" + searchText);
+            const response = await makeAuthenticatedGETRequests("https://musically-backend.onrender.com/song/get/songname/" + searchText);
             console.log(response)
             setSongData(response.data);
             setSearchText("");
