@@ -27,7 +27,10 @@ app.use(express.json());
 // If you have a password containing special character such as @, then you need to encode it by writing encodeURIComponent(Password)
 mongoose.connect(`mongodb+srv://adarshbbest:${encodeURIComponent(process.env.MONGO_PASS)}@musicallycluster0.wvdzrpt.mongodb.net/?retryWrites=true&w=majority&appName=MusicallyCluster0`, {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    socketTimeoutMS: 45000,
+    connectTimeoutMS: 30000
+    
 }).then(() => {
     console.log("Connected to MongoDB");
     document.write("
