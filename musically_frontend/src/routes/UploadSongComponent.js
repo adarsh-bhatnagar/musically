@@ -23,7 +23,7 @@ const UploadSongComponent = () => {
 
         console.log(data);
         try {
-            const response = await makeAuthenticatedPOSTRequests("https://musically-0i47.onrender.com/song/create", data);
+            const response = await makeAuthenticatedPOSTRequests("https://musically-backend.onrender.com/song/create", data);
             console.log(response);
             navigate('/dashboard');
             alert("Song uploaded successfully");
