@@ -37,7 +37,7 @@ const SignUpComponent = () => {
         }
 
         try {
-            const response = await makeUnauthenticatedPOSTRequests("https://musically-0i47.onrender.com/auth/register", data);
+            const response = await makeUnauthenticatedPOSTRequests("https://musically-backend.onrender.com/auth/register", data);
 
             console.log(response)
             const token = response.token;
