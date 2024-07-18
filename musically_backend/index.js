@@ -14,7 +14,7 @@ const passport = require("passport");
 const playlistRoutes = require("./routes/playlist");
 require("dotenv").config();
 const app = express();
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 app.use(cors({
     origin: 'https://musically-frontend.onrender.com', // Allow requests from this origin
