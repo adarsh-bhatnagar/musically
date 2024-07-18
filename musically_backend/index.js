@@ -30,6 +30,13 @@ mongoose.connect(`mongodb+srv://adarshbbest:${encodeURIComponent(process.env.MON
     useUnifiedTopology: true
 }).then(() => {
     console.log("Connected to MongoDB");
+    document.write("
+                   <html>
+                       <body>
+                          <div> Connected to Mongo DB </div>
+        </body>
+        </html>
+                   ");
 }).catch((err) => {
     console.log(err);
 })
